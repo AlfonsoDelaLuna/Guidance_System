@@ -1,0 +1,181 @@
+:root {
+  --bg-color: #B2BEB5; /* Deep blue background */
+  --container-bg: #1e2a6b; /* Darker blue for container */
+  --text-color: #fef08a; /* Light yellow text */
+  --input-bg: #1e3a8a; /* Deep blue input background */
+  --input-border: #facc15; /* Bright yellow border */
+  --success-bg: #172554; /* Dark blue success background */
+  --success-color: #4ade80; /* Light green success text */
+  --error-bg: #991b1b; /* Dark red error background */
+  --error-color: #fef08a; /* Light yellow error text */
+  --primary-color: #facc15; /* Bright yellow primary */
+  --primary-hover: #eab308; /* Darker yellow hover */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--bg-color);
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color);
+  overflow: hidden; /* Prevent scrolling */
+}
+
+.login-container {
+  width: 800px; /* Explicitly 2000px wide */
+  height: 600px; /* Explicitly 2000px tall */
+  background: var(--container-bg);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(250, 204, 21, 0.2);
+  border: 2px solid var(--input-border);
+}
+
+h2 {
+  color: var(--text-color);
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 40px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.input-group {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px; /* Slightly more space for bigger inputs */
+  color: var(--text-color);
+  font-size: 40px; /* Made label text a bit bigger too */
+}
+
+input {
+  width: 100%;
+  padding: 30px; /* Increased padding for more height and internal space */
+  border: 2px solid var(--input-border);
+  border-radius: 8px; /* Slightly larger radius for a beefier look */
+  background: var(--input-bg);
+  color: var(--text-color);
+  font-size: 30px; /* Increased font size inside the input */
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 10px var(--primary-color); /* Slightly bigger shadow */
+}
+
+.password-container {
+  position: relative;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.password-toggle:hover {
+  opacity: 1;
+}
+
+button {
+  width: 100%;
+  padding: 20px; /* Increased padding for a taller button */
+  background-color: var(--primary-color);
+  color: #000000;
+  border: none;
+  border-radius: 8px; /* Slightly larger radius */
+  cursor: pointer;
+  font-size: 30px; /* Increased font size on the button */
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1.5px; /* Slightly more letter spacing */
+  transition: all 0.3s ease;
+  margin-top: 15px; /* A bit more margin on top */
+}
+
+button:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-3px); /* Slightly more lift */
+  box-shadow: 0 6px 15px rgba(250, 204, 21, 0.3); /* Bigger shadow on hover */
+}
+
+.error-message {
+  background-color: var(--error-bg);
+  color: var(--error-color);
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.success-message {
+  background-color: var(--success-bg);
+  color: var(--success-color);
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  margin-top: 20px;
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+/* Footer styles */
+.footer {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  color: #000000;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.footer .interns {
+  display: flex;
+  margin-left: 10px;
+}
+
+.footer .interns img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-left: 5px;
+  border: 1px solid #ddd;
+}
+.footer .interns p {
+  font-size: 15px;
+  margin-top: 5px;
+  color:#000000;
+}

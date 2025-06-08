@@ -1,0 +1,180 @@
+:root {
+  --bg-color: #858ca5; /* Deep blue background */
+  --container-bg: #1a1f36; /* Slightly lighter blue for container */
+  --text-color: #fef08a; /* Light yellow text */
+  --input-border: #facc15; /* Bright yellow border */
+  --success-bg: #1a1f36; /* Dark blue success background */
+  --success-color: #fef08a; /* Light yellow success text */
+  --error-bg: #991b1b; /* Dark red error background */
+  --error-color: #fef08a; /* Light yellow error text */
+  --primary-color: #facc15; /* Bright yellow primary */
+  --primary-hover: #eab308; /* Darker yellow hover */
+  --table-header-bg: #132a68; /* Deep blue table header */
+  --table-border: #facc15; /* Yellow table borders */
+  --table-hover: #2563eb; /* Lighter blue hover */
+  --link-color: #fef08a; /* Light yellow for links */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--bg-color);
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color);
+}
+
+.login-container {
+  max-width: 1400px;
+  margin: 40px auto;
+  background: var(--container-bg);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  border: 2px solid var(--input-border);
+}
+
+h2 {
+  color: #2489ce;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.search-container {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  padding: 20px;
+  background: var(--table-header-bg);
+  border-radius: 8px;
+  justify-content: center;
+  border: 1px solid var(--input-border);
+}
+
+input[type="text"],
+select {
+  padding: 12px;
+  border: 2px solid var(--input-border);
+  border-radius: 6px;
+  background: #1a1f36;
+  color: var(--text-color);
+  flex: 1;
+  min-width: 200px;
+  transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 8px var(--primary-color);
+}
+
+select option {
+  background: #1a1f36;
+  color: var(--text-color);
+}
+
+button {
+  background-color: var(--primary-color);
+  color: #000000; /* Changed to black for better contrast */
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+button:hover {
+  background-color: var(--container-bg);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(250, 204, 21, 0.3);
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-top: 20px;
+  background: var(--container-bg);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th {
+  background-color: var(--table-header-bg);
+  color: var(--text-color);
+  padding: 15px;
+  text-align: left;
+  border-bottom: 2px solid var(--table-border);
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+td {
+  padding: 15px;
+  border-bottom: 1px solid var(--table-border);
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+tr:hover {
+  background-color: var(--table-hover);
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: var(--primary-color);
+}
+
+td a button {
+  width: 100%;
+  padding: 8px;
+  margin: 2px 0;
+}
+
+.delete-btn {
+  background-color: var(--error-color);
+  color: var(--text-color);
+}
+
+.delete-btn:hover {
+  background-color: #dc2626;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .search-container {
+    flex-direction: column;
+  }
+
+  input[type="text"],
+  select,
+  button {
+    width: 100%;
+  }
+
+  .login-container {
+    padding: 15px;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+  }
+}

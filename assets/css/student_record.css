@@ -1,0 +1,258 @@
+body {
+  background: #1e293b;
+  font-family: "Inter", sans-serif;
+  color: #e5e7eb;
+  margin: 0;
+  padding: 0;
+}
+.student-record-container {
+  width: 100%;
+  max-width: 1800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #0f172a;
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.student-record-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #374151;
+}
+
+.student-record-header h1 {
+  color: white;
+  margin: 0;
+  font-size: 1.5rem;
+  margin: 0 auto;
+}
+
+.back-to-list {
+  background: #ffffff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+
+.back-to-list:hover {
+  background: #0a1e55;
+  color: #facc15;
+}
+
+.info-section {
+  background: #030712;
+  border-radius: 6px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+.info-section h2 {
+  color: #60a5fa;
+  margin: 0 0 16px 0;
+  font-size: 1.25rem;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+.info-item {
+  padding: 8px;
+}
+
+.info-item span {
+  display: block;
+}
+
+.info-label {
+  color: #9ca3af;
+  font-size: 0.875rem;
+  margin-bottom: 4px;
+}
+
+.info-value {
+  color: white;
+  font-size: 1rem;
+}
+
+.folders-section {
+  margin-top: 24px;
+}
+
+.folder-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+}
+
+.folder-item {
+  background: #1e293b;
+  padding: 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  transition: background-color 0.2s;
+}
+
+.folder-item:hover {
+  background: #4b5563;
+}
+.folder-item.active{
+  background: #022f7c;
+
+}
+.upload-section {
+  margin-top: 24px;
+  padding: 16px;
+  background: #111827;
+  border-radius: 6px;
+}
+
+.upload-form {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.upload-button {
+  background: #2563eb;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.upload-button:hover {
+  background: #1d4ed8;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 4px;
+  background: #374151;
+  border-radius: 2px;
+  margin-top: 16px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #3b82f6;
+  border-radius: 2px;
+  width: 0%;
+  transition: width 0.3s ease;
+}
+
+.file-browser {
+  color: #9ca3af;
+  padding: 8px;
+  border: 1px solid #374151;
+  border-radius: 4px;
+  width: 100%;
+  background: #1f2937;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  color: black;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.folders-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.folders-section li a {
+  color: #818cf8;
+  text-decoration: none;
+  display: block;
+  padding: 4px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.folders-section li a:hover {
+  text-decoration: underline;
+}
+
+.upload-section {
+  margin-top: 24px;
+  padding: 16px;
+  background: #111827;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the start */
+}
+
+.upload-form {
+  display: flex;
+  flex-direction: column; /* Stack the file input and button */
+  align-items: stretch; /* Make items stretch to full width */
+  gap: 16px;
+  width: 100%; /* Take full width */
+}
+
+.upload-form input[type="file"] {
+  margin-bottom: 10px; /* Add some space below the file input */
+}
+
+.folder-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #022f7c; /* Darker background */
+  border: 1px solid #4a5568;
+  border-radius: 8px;
+  padding: 8px;
+  color: white;
+  font-weight: bold;
+}
+
+.folder-container i {
+  font-size: 24px; /* Adjust icon size */
+  margin-right: 8px;
+}

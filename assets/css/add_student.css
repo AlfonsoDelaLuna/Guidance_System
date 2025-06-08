@@ -1,0 +1,219 @@
+/* Color Variables - Light Mode */
+:root {
+  --bg-color: #1a1f36; /* Lighter grey background */
+  --container-bg: #1a1f36;
+  --text-color: #212529; /* Darker text for better contrast */
+  --input-border: #ced4da;
+  --input-focus-border: #80bdff;
+  --input-bg: #ffffff;
+  --success-bg: #d4edda;
+  --success-color: #155724;
+  --error-bg: #f8d7da;
+  --error-color: #721c24;
+  --primary-color: #007bff; /* Standard Bootstrap blue */
+  --primary-hover: #0056b3;
+  --secondary-color: #6c757d; /* For links or secondary actions */
+  --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Color Variables - Dark Mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #0a1e55; /* Very dark background */
+    --container-bg: #0a1e55; /* Slightly lighter container */
+    --text-color: #e0e0e0;
+    --input-border: #444;
+    --input-focus-border: #007bff;
+    --input-bg: #2c2c2c;
+    --success-bg: #1e4620;
+    --success-color: #a5d6a7;
+    --error-bg: #441c1c;
+    --error-color: #f48fb1;
+    --primary-color: #facc15; /* Brighter blue for dark mode */
+    --primary-hover: #0a58ca;
+    --secondary-color: #adb5bd;
+    --shadow-color: rgba(250, 204, 21, 0.2);
+  }
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  background-color: var(--bg-color);
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.login-container {
+  /* Renaming to .form-container for more generic use if needed */
+  width: 100%;
+  max-width: 500px; /* Slightly narrower for a sleeker look */
+  margin: 20px auto; /* Added top/bottom margin */
+  background: var(--container-bg);
+  padding: 40px; /* Increased padding */
+  border-radius: 12px; /* More rounded corners */
+  box-shadow: 0 8px 25px var(--shadow-color); /* Softer, more diffused shadow */
+  transition: box-shadow 0.3s ease;
+  color: #ffffff;
+  border: 2px solid #eab308;
+}
+
+.login-container:hover {
+  box-shadow: 0 12px 35px var(--shadow-color);
+}
+
+h2 {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 35px; /* Increased margin */
+  font-size: 2rem; /* Larger heading */
+  font-weight: 600; /* Bolder heading */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Increased gap */
+}
+
+label {
+  /* Added label styling */
+  font-weight: 500;
+  margin-bottom: 5px;
+  display: block;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="file"],
+select {
+  /* General input styling */
+  padding: 12px 15px; /* Increased padding */
+  border: 1px solid var(--input-border);
+  border-radius: 6px; /* More rounded inputs */
+  width: 100%;
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+  background: var(--input-bg);
+  color: var(--text-color);
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="file"]:focus,
+select:focus {
+  outline: none;
+  border-color: var(--input-focus-border);
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Bootstrap-like focus shadow */
+}
+
+input[type="file"] {
+  padding: 10px; /* Keep file input padding slightly different if needed or unify */
+}
+
+/* Custom styling for file input button */
+input[type="file"]::file-selector-button {
+  padding: 10px 15px;
+  margin-right: 10px;
+  border: none;
+  background-color: var(--primary-color);
+  color: #000000;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="file"]::file-selector-button:hover {
+  background-color: var(--primary-hover);
+}
+
+input[type="submit"] {
+  background-color: var(--primary-color);
+  color: #000000;
+  padding: 14px 25px; /* Larger padding */
+  border: none;
+  border-radius: 6px; /* More rounded */
+  cursor: pointer;
+  font-size: 1.1rem; /* Slightly larger font */
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-transform: uppercase; /* Uppercase text for buttons */
+  letter-spacing: 0.5px;
+}
+
+input[type="submit"]:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+
+p {
+  margin: 15px 0; /* Increased margin */
+  color: #ffffff;
+  text-align: center; /* Center paragraph text */
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+a:hover {
+  color: var(--primary-hover);
+  text-decoration: underline;
+}
+
+/* Message Styling */
+.message {
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  text-align: left; /* Align text to left for messages */
+  font-size: 0.95rem;
+}
+
+.message.success {
+  color: var(--success-color);
+  background-color: var(--success-bg);
+  border: 1px solid var(--success-color); /* Added border */
+}
+
+.message.error {
+  color: var(--error-color);
+  background-color: var(--error-bg);
+  border: 1px solid var(--error-color); /* Added border */
+}
+
+/* Specific message selectors from original - adapt if HTML structure changes */
+/* These might need to be updated if the HTML for messages changes to use .message.success/error classes */
+p:has(+ p a[href="dashboard.php"]) {
+  /* Consider replacing with a class like .message.success */
+  color: var(--success-color);
+  padding: 15px;
+  background-color: var(--success-bg);
+  border: 1px solid var(--success-color);
+  border-radius: 6px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+p:contains("Error") {
+  /* Consider replacing with a class like .message.error */
+  color: var(--error-color);
+  padding: 15px;
+  background-color: var(--error-bg);
+  border: 1px solid var(--error-color);
+  border-radius: 6px;
+  margin-bottom: 20px;
+  text-align: left;
+}
