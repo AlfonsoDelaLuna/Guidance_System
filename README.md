@@ -2,6 +2,18 @@
 
 This project is a comprehensive guidance system designed for educational institutions, such as schools and colleges. It provides a range of features to manage student records, track consultations, and facilitate various guidance-related activities.
 
+## Process Before 
+
+-
+
+## Problems Encountered 
+
+-
+
+## Objective
+
+- 
+
 ## Features
 
 - **Student Record Management:** Add, edit, and delete student records.
