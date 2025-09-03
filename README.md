@@ -4,11 +4,11 @@ This project is a guidance system for educational institutions, such as schools 
 
 ## Process Before 
 
--
+- In the start of a school, the students needed to fill up an online form to gather information for that student for inventory. That information is stored in the records and their PC for security purposes or physical forms in their storage. That information can be use to help student for the issues like academics grades, bullying from fellow students or any violation in the school premises. These forms can help them become safe and secure in the school.
 
 ## Problems Encountered 
 
--
+- 
 
 ## Objective
 
