@@ -8,11 +8,27 @@ This project is a guidance system for educational institutions, such as schools 
 
 ## Problems Encountered 
 
-- 
+- Some students may have difficulty accessing or completing the online form due to limited internet access or lack of technical skills.
+
+- Risk of data breaches or unauthorized access if information is not stored securely on PCs or physical files.
+
+- Incomplete or inaccurate information submitted by students, making records unreliable.
+
+- Mismanagement or loss of physical forms in storage.
+
+- Delays in retrieving student information when addressing issues such as academics, bullying, or violations.
 
 ## Objective
 
-- 
+- To gather accurate and complete student information efficiently for school records.
+
+- To ensure student data is stored securely, whether digitally or physically.
+
+- To use collected information in addressing student-related concerns such as academics, bullying, and violations.
+
+- To promote student safety and security within the school premises.
+
+- To improve accessibility and convenience in submitting and managing student records.
 
 ## Features
 
