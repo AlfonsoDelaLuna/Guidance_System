@@ -2,6 +2,18 @@
 
 This project is a guidance system for educational institutions, such as schools and colleges. It provides a range of features to manage student records, track consultations, and facilitate various guidance-related activities.
 
+## Objective
+
+- To gather accurate and complete student information efficiently for school records.
+
+- To ensure student data is stored securely, whether digitally or physically.
+
+- To use collected information in addressing student-related concerns such as academics, bullying, and violations.
+
+- To promote student safety and security within the school premises.
+
+- To improve accessibility and convenience in submitting and managing student records.
+
 ## Process Before 
 
 - In the start of a school, the students needed to fill up an online form to gather information for that student for inventory. That information is stored in the records and their PC for security purposes or physical forms in their storage. That information can be use to help student for the issues like academics grades, bullying from fellow students or any violation in the school premises. These forms can help them become safe and secure in the school.
@@ -17,18 +29,6 @@ This project is a guidance system for educational institutions, such as schools 
 - Mismanagement or loss of physical forms in storage.
 
 - Delays in retrieving student information when addressing issues such as academics, bullying, or violations.
-
-## Objective
-
-- To gather accurate and complete student information efficiently for school records.
-
-- To ensure student data is stored securely, whether digitally or physically.
-
-- To use collected information in addressing student-related concerns such as academics, bullying, and violations.
-
-- To promote student safety and security within the school premises.
-
-- To improve accessibility and convenience in submitting and managing student records.
 
 ## Features
 
