@@ -1,6 +1,6 @@
 # Guidance Management System
 
-This project is for educational institutions, such as schools and colleges. It provides a range of features to manage student records, track consultations, and facilitate various guidance-related activities.
+It is an all-in-one system for schools and colleges to better manage student information and guidance services. It organizes student records, tracks consultations, and supports various guidance activities making administrative tasks simpler and improving student support.
 
 ## Objective
 
