@@ -1,5 +1,5 @@
 # Guidance Management System
-It is an all-in-one system for shs and colleges to better manage student information and guidance services. It organizes student records, tracks consultations, and supports various guidance activities making administrative tasks simpler and improving student support.
+It is an all-in-one system for guidance to better manage student information and guidance services. It organizes student records, tracks consultations, and supports various guidance activities making administrative tasks simpler and improving student support.
 
 ## Objective
 - To gather accurate and complete student information efficiently for school records.
