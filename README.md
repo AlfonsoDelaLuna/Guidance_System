@@ -9,10 +9,9 @@ It is an all-in-one system for guidance to better manage student information and
 - To improve accessibility and convenience in submitting and managing student records.
 
 ## Process Before 
-In the start of a school, the students needed to fill up an online form to gather information for that student for inventory. The information is stored in the records and their PC for security purposes or physical forms in their storage. It can be use to help student for issues like academics grades, bullying from fellow students or any violation in the school premises. These forms can help them become safe and secure in the school.
+In the start of a school, the students needed to fill up an online form to gather information for that student in the Google Forms. The information is stored in their PC for security purposes and physical forms is stored in their storage. The student can request a form in like consultation form and store it physically as their record. It can help student solve their issues like academic grades, bullying from fellow students or any violation in the school premises. This system can help them become safe and secure in the school.
 
 ## Problems Encountered 
-- Some students may have difficulty accessing or completing the online form due to limited internet access or lack of technical skills.
 - Risk of data breaches or unauthorized access if information is not stored securely on PCs or physical files.
 - Incomplete or inaccurate information submitted by students, making records unreliable.
 - Mismanagement or loss of physical forms in storage.
